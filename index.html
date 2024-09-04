@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color RGB</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-5">
+            <h1 class="display-3 fw-bold text-primary">Selector de Color RGB</h1>
+            <p class="lead text-muted">Ajusta los controles para ver el color y su código hexadecimal.</p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-group mb-4">
+                    <label for="color-picker" class="form-label fw-semibold">Selecciona un color</label>
+                    <input type="color" id="color-picker" class="form-control form-control-color" title="Elige un color">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="red-slider" class="form-label">Rojo</label>
+                    <input type="range" id="red-slider" class="form-range" min="0" max="255" value="0">
+                    <input type="number" id="red" class="form-control mt-2" min="0" max="255" value="0">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="green-slider" class="form-label">Verde</label>
+                    <input type="range" id="green-slider" class="form-range" min="0" max="255" value="0">
+                    <input type="number" id="green" class="form-control mt-2" min="0" max="255" value="0">
+                </div>
+                <div class="form-group mb-4">
+                    <label for="blue-slider" class="form-label">Azul</label>
+                    <input type="range" id="blue-slider" class="form-range" min="0" max="255" value="0">
+                    <input type="number" id="blue" class="form-control mt-2" min="0" max="255" value="0">
+                </div>
+                <div class="form-group">
+                    <div id="color-box" class="border rounded shadow-lg" style="width: 100%; height: 200px;"></div>
+                    <p id="hex-code" class="text-center mt-3 fs-4 fw-bold">#000000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
